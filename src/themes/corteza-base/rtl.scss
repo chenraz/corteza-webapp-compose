@@ -9,7 +9,9 @@ html[dir="rtl"] {
   .text-monospace,
   .btn,label,legend,thead th,
   .font-weight-bold,b,strong,
-  .nav-active > span > .title {
+  .nav-active > span > .title,
+  strong, b, .font-weight-bold,
+  thead th, legend, label, a, .btn {
     font-family: 'Assistant', sans-serif;
   }
 
