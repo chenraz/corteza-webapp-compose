@@ -5,11 +5,12 @@
   >
     <div
       v-if="module && record"
+      class="mt-3"
     >
       <div
         v-for="(field, index) in fields"
         :key="index"
-        class="d-flex flex-column mt-3 px-3"
+        class="d-flex flex-column mb-3 px-3"
       >
         <label
           class="text-primary mb-0"
@@ -94,11 +95,13 @@ export default {
 
   watch: {
     record: {
-      handler: function () {
-        this.fetchUsers(this.fields, [this.record])
-      },
       deep: true,
       immediate: true,
+      handler (record) {
+        if (record) {
+          this.fetchUsers(this.fields, [record])
+        }
+      },
     },
   },
 
