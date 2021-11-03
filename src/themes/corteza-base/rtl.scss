@@ -14,9 +14,11 @@ html[dir="rtl"] {
   thead th, legend, label, a, .btn {
     font-family: 'Assistant', sans-serif;
   }
+
   .b-sidebar:not(.expanded):not(.b-sidebar-right) {
     right: auto;
   }
+
   .vs__dropdown-toggle {
     flex-direction: row-reverse;
 
