@@ -5,6 +5,22 @@
 
 [dir="rtl"] {
   text-align: right;
+  font-family: 'Assistant', sans-serif;
+
+  .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6,
+  .btn,
+  .tooltip,
+  .popover,
+  .text-monospace,
+  .btn,label,legend,thead th,
+  .font-weight-bold,b,strong,
+  .nav-active > span > .title {
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .nav-item > span > .title {
+    font-family: 'Assistant', sans-serif !important;
+  }
 
   .popover,
   ul.vs__dropdown-menu,
