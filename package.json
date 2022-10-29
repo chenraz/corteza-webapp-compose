@@ -11,6 +11,7 @@
     "serve": "vue-cli-service serve",
     "dev-env": "vue-cli-service serve src/dev-env.js",
     "build": "vue-cli-service build --mode production",
+    "install": "yarn build && rm -rf ../corteza-server/webapp/public/compose && cp -r dist/ ../corteza-server/webapp/public/compose",
     "lint": "vue-cli-service lint && stylelint '**/*.{vue,scss}' --fix",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:cc": "nyc vue-cli-service test:unit",
